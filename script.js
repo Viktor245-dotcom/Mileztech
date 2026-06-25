@@ -1,4 +1,17 @@
- // ── Year ──
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        const loader = document.getElementById("loader");
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 500);
+    }, 1000);
+});
+
+
+
+// ── Year ──
       document.getElementById("year").textContent = new Date().getFullYear();
 
         const products = [
